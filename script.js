@@ -225,7 +225,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const discoverButton = document.getElementById("discover-button");
     if (discoverButton) {
         discoverButton.addEventListener("click", function () {
-            window.location.href = "discover.html";
+            window.location.href = "blog.html";
         });
     }
 
