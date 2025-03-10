@@ -1,0 +1,292 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: rgb(244, 247, 255);
+    padding: 10px 50px;
+}
+
+h1,
+h2,
+h3 {
+    font-weight: 600;
+}
+
+p {
+    font-weight: 400;
+}
+
+button {
+    font-weight: 700;
+}
+
+/* banner */
+
+.banner {
+    display: flex;
+    flex-direction: row;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 10px;
+    align-items: center;
+    background-color: rgb(255, 255, 255);
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.logo {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    justify-self: center;
+    gap: 10px;
+}
+
+.logo img {
+    width: 30px;
+    height: 30px;
+    padding-left: 10px;
+}
+
+.banner-dev {
+    color: rgb(0, 48, 60);
+    font-size: 30px;
+}
+
+.banner-right {
+    display: flex;
+    flex-direction: row;
+    justify-self: center;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.task23 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    justify-self: center;
+    gap: 10px;
+    background-color: rgb(244, 247, 255);
+    border: none;
+    border-radius: 32px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    height: 35px;
+}
+
+.task23 img {
+    width: 30px;
+    height: 30px;
+}
+
+.wheel {
+    background-color: rgb(244, 247, 255);
+    border-radius: 50%;
+    padding: 15px;
+    width: 25px;
+    height: 25px;
+    display: flex;
+    /* flex-direction: row; */
+    justify-content: center;
+    justify-self: center;
+    align-items: center;
+}
+
+
+/* all card */
+.all-card-container {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    gap: 20px;
+    width: 100%;
+}
+
+/* left card */
+.left-cards {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(255, 255, 255);
+    border: none;
+    border-radius: 10px;
+}
+
+/* top cards */
+
+.left-top-cards {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    gap: 10px;
+    padding: 10px;
+}
+
+.top-1 {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 12px;
+    background-color: rgb(244, 247, 255);
+}
+
+.top-1 img {
+    width: 30px;
+    height: 30px;
+    background-color: white;
+    border: none;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.task-assigned {
+    display: flex;
+    flex-direction: column;
+}
+
+#task-count {
+    font-weight: bold;
+}
+
+.top-2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    padding: 10px;
+    font-size: larger;
+    border-radius: 5px;
+    border-radius: 12px;
+
+    background: linear-gradient(130.70deg, rgb(55, 82, 253) 0.419%, rgb(108, 127, 250) 52.66%, rgb(155, 168, 248) 99.733%);
+    color: white;
+}
+
+.top-2 img {
+    width: 40px;
+    height: 40px;
+
+}
+
+.top-3 {
+    background-color: rgb(244, 247, 255);
+    /* background-color: #F4F7FF; */
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 12px;
+}
+
+.top-3 img {
+    width: 40px;
+    height: 40px;
+}
+
+.date {
+    display: flex;
+    flex-direction: column;
+}
+
+#current-date {
+    font-weight: bold;
+}
+
+.left-down-cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px;
+    padding: 10px;
+}
+
+.c {
+    background-color: rgb(244, 247, 255);
+    border-radius: 5px;
+    padding: 20px;
+}
+
+.task-company {
+    background-color: rgb(255, 255, 255);
+    padding: 5px;
+    width: 100px;
+    display: flex;
+    flex-direction: row;
+    border-radius: 5px;
+    align-items: center;
+    justify-content: center;
+    font-size: large;
+    height: 30px;
+}
+
+.task-details {
+    background-color: rgb(255, 255, 255);
+    padding: 8px;
+    border: none;
+    border-radius: 5px;
+}
+
+.deadline {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.deadline-date {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    align-items: left;
+    justify-self: left;
+}
+
+.deadline button {
+    border: none;
+    border-radius: 8px;
+    background-color: rgb(55, 82, 253);
+    color: white;
+    padding: 12px 12px;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.right-card {
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: none;
+    border-radius: 10px;
+}
+
+
+.log {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    padding-top: 20px;
+}
+
+.log img {
+    width: 24px;
+    height: 24px;
+    justify-self: center;
+}
+
+.right-card button {
+    background-color: rgb(55, 82, 253);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+}

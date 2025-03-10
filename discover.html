@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Discover</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            /* background-color: rgb(244, 247, 255); */
+            background-color: #D2E0FB;
+            overflow-x: hidden;
+            padding: 15px 50px;
+        }
+
+        .banner {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: white;
+            padding: 15px;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .logo img {
+            width: 30px;
+            height: 30px;
+        }
+
+        .banner-dev {
+            color: rgb(0, 48, 60);
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        #desk-button {
+            background-color: rgb(55, 82, 253);
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 5px;
+            font-size: 15px;
+            cursor: pointer;
+        }
+
+        .qna {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            margin-top: 15px;
+        }
+
+        .q {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+
+        }
+
+        .ques {
+            font-size: 18px;
+            font-weight: 600;
+        }
+
+        .ans {
+            color: rgb(60, 60, 60);
+            margin-top: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="banner">
+        <div class="logo">
+            <img src="assets/logo.png" alt="Logo">
+            <div class="banner-dev">DevBoard</div>
+        </div>
+        <button id="desk-button">Back to Desk</button>
+    </div>
+
+    <div class="qna">
+        <div class="q">
+            <h2 class="ques">Question-1: What are the different ways to select an element in the DOM?</h2>
+            <p class="ans">Some ways of selecting elements in the DOM include getElementById(),
+                getElementsByClassName(), getElementsByTagName(), querySelector(), querySelectorAll().</p>
+        </div>
+
+        <div class="q">
+            <h2 class="ques">Question-2: What is the difference between innerHTML, innerText, and textContent?</h2>
+            <p class="ans">innerHTML reads and modifies both HTML and text content. innerText reads only visible text.
+                textContent reads all text, including hidden elements.</p>
+        </div>
+
+        <div class="q">
+            <h2 class="ques">Question-3: What is event delegation in the DOM?</h2>
+            <p class="ans">Event delegation is when we use a single event listener on a parent element instead of using
+                multiple event listener for each child.</p>
+        </div>
+
+        <div class="q">
+            <h2 class="ques">Question-4: What is event bubbling in the DOM?</h2>
+            <p class="ans">Event bubbling is when an element receives an event, and that event bubbles up or propagates
+                to its parent and ancestor elements in the DOM tree until it gets to the root element.</p>
+        </div>
+    </div>
+
+    <script>
+        const deskButton = document.getElementById("desk-button");
+
+        deskButton.addEventListener("click", function () {
+            window.location.href = "index.html";
+        });
+    </script>
+</body>
+
+</html>

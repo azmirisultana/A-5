@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DevBoard</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+</head>
+
+<body class="poppins-regular">
+
+    <header>
+        <!-- banner -->
+        <div class="banner">
+            <div class="logo">
+                <img src="assets/logo.png" alt="">
+                <div class="banner-dev">
+                    <p>Dev<span style="font-weight: bold;">Board</span></p>
+                </div>
+            </div>
+
+            <div class="banner-right">
+
+                <div class="task23">
+                    <img src="assets/checkbox.png" alt="">
+                    <h2 id="notification-count">23</h2>
+                </div>
+
+                <div class="wheel" id="wheel-btn">
+                    <img src="assets/theme-btn.png" alt="">
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- all cards -->
+        <div class="all-card-container">
+            <!-- left card -->
+            <div class="left-cards">
+                <!-- 3 cards -->
+                <div class="left-top-cards">
+                    <!-- 1 -->
+                    <div class="top-1">
+                        <img src="assets/checkbox.png" alt="">
+                        <div class="task-assigned">
+                            <span>Task Assigned</span>
+                            <span id="task-count">6</span>
+                        </div>
+                    </div>
+                    <!--  2-->
+                    <div class="top-2">
+                        <img src="assets/board.png" alt="">
+                        <div class="discover-btn" id="discover-button">
+                            <p>Discover Something New Today!</p>
+                        </div>
+                    </div>
+
+                    <!-- 3 -->
+
+                    <div class="top-3">
+                        <img src="assets/calender.png" alt="">
+                        <div class="date">
+                            <div id="current-day">
+                            </div>
+                            <div id="current-date"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 6 cards -->
+                <div class="left-down-cards">
+                    <!-- card-1 -->
+                    <div class="card-1 c" id="task1">
+                        <div class="task-company">
+                            <p class="company">ShopEase</p>
+                        </div>
+                        <h3 id="task1-title">Fix Mobile Button Issue</h3>
+                        <p class="task-details">Debug using chrome DevTools, check for overlappi..</p>
+                        <div class="deadline">
+                            <div class="deadline-date">
+                                <p>Deadline
+                                    <br>21 March, 2025
+                                </p>
+                            </div>
+                            <button id="completed1">Completed</button>
+                        </div>
+                    </div>
+
+                    <!-- card-2 -->
+                    <div class="card-2 c" id="task2">
+                        <div class="task-company">
+                            <p>CloudSync</p>
+                        </div>
+                        <h3 id="task2-title">Add Dark Mode</h3>
+                        <p class="task-details">Store the user's preferance in localstotage, update CSS</p>
+
+                        <div class="deadline">
+                            <div class="deadline-date">
+                                <p>Deadline
+                                    <br>21 March, 2025
+                                </p>
+                            </div>
+                            <button id="completed2">Completed</button>
+                        </div>
+                    </div>
+
+
+                    <!-- card-3 -->
+                    <div class="card-3 c" id="task3">
+                        <div class="task-company">
+                            <p>SwiftPay</p>
+                        </div>
+                        <h3 id="task3-title">Optimize Home Page</h3>
+                        <p class="task-details">Debug using chrome DevTools, check for overlappi..</p>
+
+                        <div class="deadline">
+                            <div class="deadline-date">
+                                <p>Deadline
+                                    <br>21 March, 2025
+                                </p>
+                            </div>
+                            <button id="completed3">Completed</button>
+                        </div>
+                    </div>
+
+                    <div class="card-4 c" id="task4">
+                        <div class="task-company">
+                            <p>Meta</p>
+                        </div>
+                        <h3 id="task4-title">Add new emoji 🤲</h3>
+                        <p class="task-details">Debug using chrome DevTools, check for overlappi..</p>
+
+                        <div class="deadline">
+                            <div class="deadline-date">
+                                <p>Deadline
+                                    <br>21 March, 2025
+                                </p>
+                            </div>
+                            <button id="completed4">Completed</button>
+                        </div>
+
+                    </div>
+
+                    <div class="card-5 c" id="task5">
+                        <div class="task-company">
+                            <p>GoogleLLC</p>
+                        </div>
+                        <h3 id="task5-title">Integrate OpenAI API</h3>
+                        <p class="task-details">Debug using chrome DevTools, check for overlappi..</p>
+
+                        <div class="deadline">
+                            <div class="deadline-date">
+                                <p>Deadline
+                                    <br>21 March, 2025
+                                </p>
+                            </div>
+                            <button id="completed5">Completed</button>
+                        </div>
+                    </div>
+
+                    <div class="card-6 c" id="task6">
+                        <div class="task-company">
+                            <p>Glassdoor</p>
+                        </div>
+                        <h3 id="task6-title">Improve Job Searching</h3>
+                        <p class="task-details">Debug using chrome DevTools, check for overlappi..</p>
+
+                        <div class="deadline">
+                            <div class="deadline-date">
+                                <p>Deadline
+                                    <br>21 March, 2025
+                                </p>
+                            </div>
+                            <button id="completed6">Completed</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- right card- sidebar -->
+            <div class="right-card">
+                <div class="log">
+                    <img src="assets/activity.png" alt="">
+                    <p>Activity Log</p>
+                </div>
+                <button class="clear" id="clear-history">Clear history</button>
+                <div class="right-side-log">
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
